@@ -73,7 +73,7 @@ export const brandsJson = [
 
 ]
 
-export const productOffjson = [
+export const productOffJson = [
     {
         "productOffId": "1",
         "productOffSaveCost": "$100",
@@ -98,18 +98,32 @@ export const productOffjson = [
         "productOffImage": "/productImg/watch.png",
         "productOffDesc": "Explore Our Furniture & Home Furnishing Range"
     },
+
+]
+
+export const productCategoryJson = [
     {
-        "productOffId": "5",
-        "productOffSaveCost": "$100",
-        "productOffImage": "/productImg/watch.png",
-        "productOffDesc": "Explore Our Furniture & Home Furnishing Range"
+        productCategoryId: "1",
+        productCategoryName: "Hellow World"
     },
     {
-        "productOffId": "6",
-        "productOffSaveCost": "$100",
-        "productOffImage": "/productImg/watch.png",
-        "productOffDesc": "Explore Our Furniture & Home Furnishing Range"
+        productCategoryId: "2",
+        productCategoryName: "Hellow World"
     },
-
-
+    {
+        productCategoryId: "3",
+        productCategoryName: "Hellow World"
+    },
+    {
+        productCategoryId: "4",
+        productCategoryName: "Hellow World"
+    },
+    {
+        productCategoryId: "4",
+        productCategoryName: "Hellow World"
+    },
+    {
+        productCategoryId: "4",
+        productCategoryName: "Hellow World"
+    }
 ]

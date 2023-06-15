@@ -9,11 +9,11 @@ const ProductCategoryCard = () => {
 				alt="product"
 				fill
 			/>
-			<div className="absolute w-full">
+			{/* <div className="absolute w-full">
 				<p className="text-center text-white font-bold text-bold text-[1.5em]">
 					Hello world
 				</p>
-			</div>
+			</div> */}
 		</div>
 	)
 }
