@@ -15,7 +15,7 @@ const ItemGroup = ({
 	cardClassName,
 }: ItemGroupProps) => {
 	return (
-		<div className={containerClassName}>
+		<div className={containerClassName} >
 			{data?.map((item) => {
 				return (
 					<div className={cardClassName} key={keyExtractor(item)}>

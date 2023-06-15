@@ -33,11 +33,14 @@ export default function Home() {
 				<ItemGroup
 					keyExtractor={(item) => item.productCategoryId}
 					data={productCategory.data as any}
-					containerClassName="flex flex-row flex-wrap justify-between"
+					containerClassName="flex flex-row flex-wrap justify-between space-y-4"
 					renderItem={(item) => {
 						return <ProductCategoryCard />
 					}}
 				/>
+				<div className="items-">
+
+				</div>
 			</SectionWrapper>
 
 			<SectionWrapper header="Todays best deals">
@@ -94,7 +97,7 @@ export default function Home() {
 				<ItemGroup
 					keyExtractor={(item) => item.brandId}
 					data={brandQuery.data as any}
-					containerClassName="grid grid-cols-2 gap-2 sm:grid-cols-3"
+					containerClassName="grid grid-cols-2 gap-2 sm:grid-cols-3 "
 					renderItem={(item) => {
 						return (
 							<div className="w-full h-20 p-10 border bg-slate-200 rounded-md ">
