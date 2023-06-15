@@ -3,7 +3,9 @@ import ProductCategoryCard from "./ProductCategoryCard"
 
 const ProductCategory = () => {
 	return (
-		<div className="containerClassName={`grid grid-cols-2 gap-2 sm:grid-cols-3`}">
+		<div>
+			<ProductCategoryCard />
+			<ProductCategoryCard />
 			<ProductCategoryCard />
 			<ProductCategoryCard />
 			<ProductCategoryCard />

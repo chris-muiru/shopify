@@ -21,6 +21,27 @@ export const productJson = [
         "productShtDesc": "an amaizing gaming headphone",
         "productCost": "$35.00"
     },
+    {
+        "productId": "27",
+        "productImage": "/productImg/headPhone.png",
+        "productName": "Gamming headphones",
+        "productShtDesc": "an amaizing gaming headphone",
+        "productCost": "$35.00"
+    },
+    {
+        "productId": "28",
+        "productImage": "/productImg/watch.png",
+        "productName": "Gamming headphones",
+        "productShtDesc": "an amaizing gaming headphone",
+        "productCost": "$35.00"
+    },
+    {
+        "productId": "29",
+        "productImage": "/productImg/headPhone.png",
+        "productName": "Gamming headphones",
+        "productShtDesc": "an amaizing gaming headphone",
+        "productCost": "$35.00"
+    },
 
 ]
 
@@ -70,6 +91,25 @@ export const productOffjson = [
         "productOffSaveCost": "$100",
         "productOffImage": "/productImg/watch.png",
         "productOffDesc": "Explore Our Furniture & Home Furnishing Range"
-    }
+    },
+    {
+        "productOffId": "4",
+        "productOffSaveCost": "$100",
+        "productOffImage": "/productImg/watch.png",
+        "productOffDesc": "Explore Our Furniture & Home Furnishing Range"
+    },
+    {
+        "productOffId": "5",
+        "productOffSaveCost": "$100",
+        "productOffImage": "/productImg/watch.png",
+        "productOffDesc": "Explore Our Furniture & Home Furnishing Range"
+    },
+    {
+        "productOffId": "6",
+        "productOffSaveCost": "$100",
+        "productOffImage": "/productImg/watch.png",
+        "productOffDesc": "Explore Our Furniture & Home Furnishing Range"
+    },
+
 
 ]

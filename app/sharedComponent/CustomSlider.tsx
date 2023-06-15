@@ -2,6 +2,7 @@ import React, { FC, ReactNode } from "react"
 import Slider, { Settings } from "react-slick"
 import "slick-carousel/slick/slick.css"
 import "slick-carousel/slick/slick-theme.css"
+import SectionWrapper from "./SectionWrapper"
 
 interface customSliderProps {
 	settings?: Settings

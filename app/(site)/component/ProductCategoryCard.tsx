@@ -2,7 +2,7 @@ import React from "react"
 import Image from "next/image"
 const ProductCategoryCard = () => {
 	return (
-		<div className="h-[240px] gap-2 m-2 rounded-xl relative md:h-[350px]">
+		<div className="h-[200px] w-[155px] gap-2 sm:w-[280px] sm:h-[290px] xl:w-[200px] xl:h-[260px] m-2 rounded-xl relative md:h-[350px]">
 			<Image
 				src="/bag.png"
 				className="object-cover rounded-xl"

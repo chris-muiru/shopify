@@ -2,7 +2,7 @@ import React from "react"
 import { AiOutlineUngroup } from "react-icons/ai"
 const OrgDetail = () => {
 	return (
-		<div className="flex flex-row rounded-sm w-full space-x-1">
+		<section className="flex flex-row rounded-sm w-full space-x-1">
 			<div className="">
 				{/* org icon */}
 				<AiOutlineUngroup className="text-3xl" />
@@ -13,7 +13,7 @@ const OrgDetail = () => {
 					{"Shopify"}
 				</h2>
 			</div>
-		</div>
+		</section>
 	)
 }
 
