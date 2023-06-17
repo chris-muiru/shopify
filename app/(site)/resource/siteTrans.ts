@@ -1,5 +1,5 @@
 import { axiosPublic } from "@/util/config/axiosInstance";
-import { brandsJson, productCategoryJson, productJson, productOffJson } from "./dummy";
+import { bestStoreJson, brandsJson, popularProductJson, productCategoryJson, productJson, productOffJson } from "./dummy";
 
 export async function getProducts() {
     return await Promise.resolve(productJson);
@@ -13,4 +13,12 @@ export async function getBrands() {
 }
 export async function getProductOff() {
     return await Promise.resolve(productOffJson)
+}
+
+export async function getPopularProduct() {
+    return await Promise.resolve(popularProductJson)
+}
+
+export async function getBestStore() {
+    return await Promise.resolve(bestStoreJson)
 }

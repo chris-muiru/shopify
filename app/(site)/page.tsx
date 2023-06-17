@@ -10,6 +10,8 @@ import {
 	useBrand,
 	useProductOff,
 	useProductCategory,
+	usePopularProduct,
+	useBestStore,
 } from "./resource/hook"
 import CustomSlider from "../sharedComponent/CustomSlider"
 import OffProducts from "./component/off-product"
@@ -17,14 +19,19 @@ import ProductCategoryCard from "./component/ProductCategoryCard"
 import HeroSection from "./component/HeroSection"
 import SectionWrapper from "../sharedComponent/SectionWrapper"
 import Image from "next/image"
+import { repeat } from "@/util/resource/arrayRepeater"
+import BrandCard from "./component/BrandCard"
+import StoreCard from "./component/StoreCard"
 
 export default function Home() {
 	const productQuery = useProduct()
 	const brandQuery = useBrand()
 	const productOff = useProductOff()
 	const productCategory = useProductCategory()
+	const popularProduct = usePopularProduct()
+	const bestStore = useBestStore()
 
-	console.log(productCategory.data)
+	console.log(popularProduct.data)
 	return (
 		<div className="w-full">
 			<HeroSection />
@@ -38,9 +45,7 @@ export default function Home() {
 						return <ProductCategoryCard />
 					}}
 				/>
-				<div className="items-">
-
-				</div>
+				<div className="items-"></div>
 			</SectionWrapper>
 
 			<SectionWrapper header="Todays best deals">
@@ -169,14 +174,14 @@ export default function Home() {
 				/>
 			</SectionWrapper>
 
-			<div className="w-full min-h-[400px] relative my-20">
+			<div className="w-full min-h-[600px] relative my-20">
 				<Image
 					src={"/bag.png"}
 					alt={"cash back"}
 					className="object-cover"
 					fill
 				/>
-				<div className=" w-3/4 bg-green-900 z-20 absolute right-10 top-6 text-white rounded-lg lg:w-1/2 xl:w-1/4 ">
+				<div className=" w-3/4 bg-green-900 z-20 absolute right-10 bottom-10 text-white rounded-lg lg:w-1/2 xl:w-1/4 ">
 					<div className="m-10 space-y-5">
 						<h2 className="text-2xl">Get 5% Cash Back On $200</h2>
 						<p>
@@ -191,7 +196,101 @@ export default function Home() {
 				</div>
 			</div>
 
-			<CustomHeader header="Weekly Popular Products" />
+			<SectionWrapper header="Todays best Deals for you">
+				<div className="flex rounded-xl gap-1 flex-wrap">
+					{repeat(["Test"], 6).map((value, index) => {
+						return (
+							<div
+								className="bg-white border rounded-md p-3 px-[65px]"
+								key={index}
+							>
+								{value}
+							</div>
+						)
+					})}
+				</div>
+			</SectionWrapper>
+
+			<SectionWrapper>
+				<ItemGroup
+					cardClassName={``}
+					containerClassName="flex flex-row flex-wrap gap-y-4"
+					keyExtractor={(item) => item.productId}
+					data={productQuery.data as any}
+					renderItem={(item: any) => {
+						return (
+							<ProductCard
+								productId={item.productId}
+								productShtDesc={item.productShtDesc}
+								productName={item.productName}
+								productRating={item.productRating}
+								productCost={item.productCost}
+								productImage={item.productImage}
+							/>
+						)
+					}}
+				/>
+			</SectionWrapper>
+			<div className="bg-red-200 flex justify-center space-x-40 p-6 my-16">
+				<div className="space-y-3 font-bold m-10">
+					<p className="text-5xl">Get 5% Cash Back</p>
+					<p className="text-2xl">on Shopcart.com</p>
+					<button className="bg-green-900 p-2 w-[130px] rounded-xl text-white">
+						Learn More
+					</button>
+				</div>
+				<div className="w-[250px] h-[150px] relative my-12 -rotate-[29deg]">
+					<Image
+						src={
+							"https://uploads-ssl.webflow.com/63e857eaeaf853471d5335ff/63e8c4e768e3260571e48a0c_visa%20card-min.png"
+						}
+						fill
+						alt="smart card"
+					/>
+				</div>
+			</div>
+
+			<SectionWrapper header="Most Selling Products">
+				<ItemGroup
+					cardClassName={``}
+					containerClassName="flex flex-row flex-wrap gap-y-4 "
+					keyExtractor={(item) => item.productId}
+					data={popularProduct.data as any}
+					renderItem={(item: any) => {
+						return (
+							<ProductCard
+								productId={item.productId}
+								productShtDesc={item.productShtDesc}
+								productName={item.productName}
+								productRating={item.productRating}
+								productCost={item.productCost}
+								productImage={item.productImage}
+							/>
+						)
+					}}
+				/>
+			</SectionWrapper>
+
+			<SectionWrapper header="Services To Help You Shop">
+				<ItemGroup
+					cardClassName="w-[350px] rounded-md"
+					containerClassName="flex flex-row flex-wrap gap-y-4 "
+					keyExtractor={(item) => item.productId}
+					data={bestStore.data as any}
+					renderItem={(item: any) => {
+						return (
+							<StoreCard
+								cardClassName="rounded-xl bg-slate-50"
+								storeProductImageSample={item.storeProductImageSample}
+								storeName={item.storeName}
+								storeLogo={item.storeLogo}
+								storeDeliveryTime={item.storeDeliveryTime}
+								storeProductCategory={item.storeProductCategory}
+							/>
+						)
+					}}
+				/>
+			</SectionWrapper>
 		</div>
 	)
 }

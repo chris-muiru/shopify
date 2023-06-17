@@ -1,5 +1,5 @@
 import { useQuery } from "react-query";
-import { getBrands, getProductCategories, getProductOff, getProducts } from "./siteTrans";
+import { getBestStore, getBrands, getPopularProduct, getProductCategories, getProductOff, getProducts } from "./siteTrans";
 
 export function useProduct() {
     return useQuery("products", getProducts)
@@ -14,4 +14,13 @@ export function useProductOff() {
 
 export function useProductCategory() {
     return useQuery("productCategory", getProductCategories)
+}
+
+
+export function usePopularProduct() {
+    return useQuery("popularProduct", getPopularProduct)
+}
+
+export function useBestStore() {
+    return useQuery("bestStore", getBestStore)
 }

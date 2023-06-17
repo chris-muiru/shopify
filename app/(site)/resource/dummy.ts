@@ -127,3 +127,54 @@ export const productCategoryJson = [
         productCategoryName: "Hellow World"
     }
 ]
+
+export const popularProductJson = [
+    {
+        "productId": "23",
+        "productImage": "/productImg/headPhone.png",
+        "productName": "Gamming headphones",
+        "productShtDesc": "an amaizing gaming headphone",
+        "productCost": "$35.00"
+    },
+    {
+        "productId": "25",
+        "productImage": "/productImg/watch.png",
+        "productName": "Gamming headphones",
+        "productShtDesc": "an amaizing gaming headphone",
+        "productCost": "$35.00"
+    },
+
+
+]
+
+export const bestStoreJson = [
+    {
+        "storeId": "1",
+        "storeName": "Yuichis",
+        "storeProductCategory": "perfume",
+        "storeProductImageSample": "/bag.png",
+        "storeLogo": "/productImg/headPhone.png",
+        "storeDeliveryTime": "24"
+    },
+    {
+        "storeId": "2",
+        "storeName": "Java",
+        "storeProductImageSample": "/bag.png",
+        "storeLogo": "/bag.png",
+        "storeDeliveryTime": "24"
+    },
+    {
+        "storeId": "3",
+        "storeName": "Quevo",
+        "storeProductImageSample": "/bag.png",
+        "storeLogo": "/bag.png",
+        "storeDeliveryTime": "24"
+    },
+    {
+        "storeId": "4",
+        "storeName": "Tims",
+        "storeProductImageSample": "/bag.png",
+        "storeLogo": "/bag.png",
+        "storeDeliveryTime": "24"
+    }
+]
