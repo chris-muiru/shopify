@@ -21,7 +21,7 @@ const StoreCard: FC<StoreCardProps> = ({
 			<div className="w-full h-[270px] relative">
 				<Image
 					src={storeProductImageSample}
-					className="object-fit"
+					className="object-contain"
 					alt="store product image sample"
 					fill
 				/>
