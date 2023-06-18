@@ -1,3 +1,4 @@
+import tw from "@/util/resource/twMerge"
 import { data } from "autoprefixer"
 import React, { ReactNode } from "react"
 interface ItemGroupProps {
@@ -15,10 +16,15 @@ const ItemGroup = ({
 	cardClassName,
 }: ItemGroupProps) => {
 	return (
-		<div className={containerClassName} >
+		<div
+			className={tw("w-full", containerClassName ? containerClassName : "")}
+		>
 			{data?.map((item) => {
 				return (
-					<div className={cardClassName} key={keyExtractor(item)}>
+					<div
+						className={tw("grow", cardClassName ? cardClassName : "")}
+						key={keyExtractor(item)}
+					>
 						{renderItem(item)}
 					</div>
 				)

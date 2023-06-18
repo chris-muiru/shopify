@@ -14,7 +14,7 @@ const SectionWrapper: FC<SectionWrapperInterface> = ({
 }) => {
 	return (
 		<section
-			className={`max-w-[90rem] px-5 sm:mx-auto  sm:my-5  ${sectionClassName}`}
+			className={`max-w-[90rem] sm:mx-auto xl:px-0   sm:my-5  ${sectionClassName}`}
 		>
 			{!!header && <CustomHeader header={header} />}
 			{children}

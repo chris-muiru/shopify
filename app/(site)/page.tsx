@@ -31,21 +31,21 @@ export default function Home() {
 	const popularProduct = usePopularProduct()
 	const bestStore = useBestStore()
 
-	console.log(popularProduct.data)
 	return (
 		<div className="w-full">
 			<HeroSection />
-
-			<SectionWrapper header="Shop Our Top Categories">
+			<SectionWrapper
+				header="Shop Our Top Categories"
+				sectionClassName="w-screen"
+			>
 				<ItemGroup
 					keyExtractor={(item) => item.productCategoryId}
 					data={productCategory.data as any}
-					containerClassName="flex flex-row flex-wrap justify-between space-y-4"
+					containerClassName="flex flex-row flex-wrap gap-5"
 					renderItem={(item) => {
 						return <ProductCategoryCard />
 					}}
 				/>
-				<div className="items-"></div>
 			</SectionWrapper>
 
 			<SectionWrapper header="Todays best deals">
@@ -59,23 +59,23 @@ export default function Home() {
 						autoplay: true,
 						responsive: [
 							{
-								breakpoint: 1024,
+								breakpoint: 1280,
 								settings: {
 									slidesToShow: 3,
 								},
 							},
 							{
-								breakpoint: 800,
+								breakpoint: 1000,
 								settings: {
 									slidesToShow: 2,
 									slidesToScroll: 2,
 								},
 							},
 							{
-								breakpoint: 480,
+								breakpoint: 640,
 								settings: {
 									slidesToShow: 1,
-									slidesToScroll: 2,
+									slidesToScroll: 1,
 								},
 							},
 						],
@@ -102,7 +102,7 @@ export default function Home() {
 				<ItemGroup
 					keyExtractor={(item) => item.brandId}
 					data={brandQuery.data as any}
-					containerClassName="grid grid-cols-2 gap-2 sm:grid-cols-3 "
+					containerClassName="grid grid-cols-1 gap-2 sm:grid-cols-3 "
 					renderItem={(item) => {
 						return (
 							<div className="w-full h-20 p-10 border bg-slate-200 rounded-md ">
@@ -134,29 +134,29 @@ export default function Home() {
 						autoplay: true,
 						responsive: [
 							{
-								breakpoint: 1024,
+								breakpoint: 1280,
 								settings: {
 									slidesToShow: 3,
 								},
 							},
 							{
-								breakpoint: 800,
+								breakpoint: 1000,
 								settings: {
 									slidesToShow: 2,
 									slidesToScroll: 2,
 								},
 							},
 							{
-								breakpoint: 480,
+								breakpoint: 640,
 								settings: {
 									slidesToShow: 1,
-									slidesToScroll: 2,
+									slidesToScroll: 1,
 								},
 							},
 						],
 					}}
 					cardClassName={``}
-					containerClassName=""
+					containerClassName="m-auto"
 					keyExtractor={(item) => item.productId}
 					data={productQuery.data as any}
 					renderItem={(item: any) => {
@@ -201,7 +201,7 @@ export default function Home() {
 					{repeat(["Test"], 6).map((value, index) => {
 						return (
 							<div
-								className="bg-white border rounded-md p-3 px-[65px]"
+								className="bg-white border rounded-md p-3 px-[7rem] grow"
 								key={index}
 							>
 								{value}
@@ -213,8 +213,7 @@ export default function Home() {
 
 			<SectionWrapper>
 				<ItemGroup
-					cardClassName={``}
-					containerClassName="flex flex-row flex-wrap gap-y-4"
+					containerClassName="flex flex-wrap gap-y-4"
 					keyExtractor={(item) => item.productId}
 					data={productQuery.data as any}
 					renderItem={(item: any) => {
@@ -252,8 +251,8 @@ export default function Home() {
 
 			<SectionWrapper header="Most Selling Products">
 				<ItemGroup
-					cardClassName={``}
-					containerClassName="flex flex-row flex-wrap gap-y-4 "
+					cardClassName="grow-0"
+					containerClassName="flex flex-row flex-wrap gap-y-4 gap-2 justify-start"
 					keyExtractor={(item) => item.productId}
 					data={popularProduct.data as any}
 					renderItem={(item: any) => {
@@ -273,14 +272,13 @@ export default function Home() {
 
 			<SectionWrapper header="Services To Help You Shop">
 				<ItemGroup
-					cardClassName="w-[350px] rounded-md"
-					containerClassName="flex flex-row flex-wrap gap-y-4 "
+					cardClassName="rounded-md"
+					containerClassName="flex flex-row flex-wrap gap-y-10 "
 					keyExtractor={(item) => item.productId}
 					data={bestStore.data as any}
 					renderItem={(item: any) => {
 						return (
 							<StoreCard
-								cardClassName="rounded-xl bg-slate-50"
 								storeProductImageSample={item.storeProductImageSample}
 								storeName={item.storeName}
 								storeLogo={item.storeLogo}

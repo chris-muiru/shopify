@@ -8,7 +8,7 @@ const Footer = () => {
 		<SectionWrapper>
 			<footer className="space-y-4 mt-20">
 				<hr className="" />
-				<div className="grid grid-cols-4 gap-6 sm:grid-cols-3 lg:grid-cols-5 lg:row-span-1">
+				<div className="grid grid-cols-4 gap-6 sm:grid-cols-3 lg:grid-cols-5 lg:grid-rows-2 lg:row-span-1">
 					<div className="col-span-4 sm:col-start-1 sm:col-span-2 lg:row-span-1 lg:col-span-2 lg:col-start-1 lg:row-start-1 space-y-3 lg:self-start">
 						<div>
 							<div className="w-[200px] h-[50px] relative">
@@ -31,7 +31,6 @@ const Footer = () => {
 					<div className="row-start-5 col-span-4  sm:row-span-1 sm:col-span-2 lg:col-span-2 lg:col-start-1">
 						<p className="font-semibold">Accepted Payments</p>
 						<div className="flex flex-row flex-wrap gap-2">
-							<div className="border w-[60px] relative p-4 border-black rounded-md"></div>
 							<div className="border w-[60px] relative p-4 border-black rounded-md"></div>
 							<div className="border w-[60px] relative p-4 border-black rounded-md"></div>
 							<div className="border w-[60px] relative p-4 border-black rounded-md"></div>
