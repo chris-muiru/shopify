@@ -34,10 +34,7 @@ export default function Home() {
 	return (
 		<div className="w-full">
 			<HeroSection />
-			<SectionWrapper
-				header="Shop Our Top Categories"
-				sectionClassName="w-screen"
-			>
+			<SectionWrapper header="Shop Our Top Categories">
 				<ItemGroup
 					keyExtractor={(item) => item.productCategoryId}
 					data={productCategory.data as any}
@@ -251,7 +248,7 @@ export default function Home() {
 
 			<SectionWrapper header="Most Selling Products">
 				<ItemGroup
-					cardClassName="grow-0"
+					cardClassName="xl:grow-0"
 					containerClassName="flex flex-row flex-wrap gap-y-4 gap-2 justify-start"
 					keyExtractor={(item) => item.productId}
 					data={popularProduct.data as any}
