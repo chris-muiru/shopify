@@ -180,7 +180,7 @@ export default function Home() {
 				/>
 				<div className=" w-3/4 bg-green-900 z-20 absolute right-10 bottom-10 text-white rounded-lg lg:w-1/2 xl:w-1/4 ">
 					<div className="m-10 space-y-5">
-						<h2 className="text-2xl">Get 5% Cash Back On $200</h2>
+						<h2 className="sm:text-2xl">Get 5% Cash Back On $200</h2>
 						<p>
 							Shopping is a bit of a relaxing hobby for me, which is
 							sometimes troubling for the bank balance.
@@ -227,23 +227,27 @@ export default function Home() {
 					}}
 				/>
 			</SectionWrapper>
-			<div className="bg-red-200 flex justify-center space-x-40 p-6 my-16">
-				<div className="space-y-3 font-bold m-10">
-					<p className="text-5xl">Get 5% Cash Back</p>
-					<p className="text-2xl">on Shopcart.com</p>
-					<button className="bg-green-900 p-2 w-[130px] rounded-xl text-white">
-						Learn More
-					</button>
-				</div>
-				<div className="w-[250px] h-[150px] relative my-12 -rotate-[29deg]">
-					<Image
-						src={
-							"https://uploads-ssl.webflow.com/63e857eaeaf853471d5335ff/63e8c4e768e3260571e48a0c_visa%20card-min.png"
-						}
-						fill
-						alt="smart card"
-					/>
-				</div>
+			<div className="bg-yellow-300">
+				<SectionWrapper>
+					<div className="flex justify-evenly">
+						<div className="space-y-3 font-bold lg:mt-16 w-full">
+							<p className="text-4xl sm:text-5xl">Get 5% Cash Back</p>
+							<p className="text-2xl">on Shopcart.com</p>
+							<button className="bg-green-900 p-2 w-[130px] rounded-xl text-white">
+								Learn More
+							</button>
+						</div>
+						<div className="hidden lg:block w-[250px] h-[150px] relative my-10 -rotate-[22deg]">
+							<Image
+								src={
+									"https://uploads-ssl.webflow.com/63e857eaeaf853471d5335ff/63e8c4e768e3260571e48a0c_visa%20card-min.png"
+								}
+								fill
+								alt="smart card"
+							/>
+						</div>
+					</div>
+				</SectionWrapper>
 			</div>
 
 			<SectionWrapper header="Most Selling Products">
