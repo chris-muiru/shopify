@@ -1,9 +1,7 @@
 "use client"
-
 import CustomHeader from "@/app/sharedComponent/CustomHeader"
 import { useEffect, useState } from "react"
 import ItemGroup from "./component/ItemGroup"
-import ProductCard from "./component/ProductCard"
 import ProductCategory from "./component/ProductCategoryGroup"
 import {
 	useProduct,
@@ -22,6 +20,7 @@ import Image from "next/image"
 import { repeat } from "@/util/resource/arrayRepeater"
 import BrandCard from "./component/BrandCard"
 import StoreCard from "./component/StoreCard"
+import ProductCard from "./component/ProductCard"
 
 export default function Home() {
 	const productQuery = useProduct()
@@ -38,7 +37,7 @@ export default function Home() {
 				<ItemGroup
 					keyExtractor={(item) => item.productCategoryId}
 					data={productCategory.data as any}
-					containerClassName="grid grid-cols-2 lg:grid-cols-3 xl:grid-cols-5 gap-4"
+					containerClassName="grid grid-cols-2 sm:grid-cols-4 xl:grid-cols-6 gap-4"
 					renderItem={(item) => {
 						return <ProductCategoryCard />
 					}}
@@ -78,7 +77,7 @@ export default function Home() {
 						],
 					}}
 					cardClassName={``}
-					containerClassName="m-auto gap-3"
+					containerClassName="m-auto"
 					keyExtractor={(item) => item.productId}
 					data={productQuery.data as any}
 					renderItem={(item: any) => {
@@ -94,16 +93,28 @@ export default function Home() {
 						)
 					}}
 				/>
+				<hr className="border-2 " />
 			</SectionWrapper>
 			<SectionWrapper header="Choose By Brand">
 				<ItemGroup
 					keyExtractor={(item) => item.brandId}
 					data={brandQuery.data as any}
 					containerClassName="grid grid-cols-1 gap-2 sm:grid-cols-3 "
-					renderItem={(item) => {
+					renderItem={(brand) => {
 						return (
-							<div className="w-full h-20 p-10 border bg-slate-200 rounded-md ">
-								{item.brandName}
+							<div className="w-full flex p-4   border bg-slate-200 rounded-md space-x-3">
+								<div className="w-[4rem] h-[4rem] relative">
+									<Image
+										src={brand.brandImage}
+										className=""
+										fill
+										alt={brand.brandName}
+									/>
+								</div>
+								<div className="self-center">
+									<p>{brand.brandName}</p>
+									<small>Delivered in 24 hours</small>
+								</div>
 							</div>
 						)
 					}}

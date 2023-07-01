@@ -5,42 +5,48 @@ export const productJson = [
         "productImage": "/productImg/headPhone.png",
         "productName": "Gamming headphones",
         "productShtDesc": "an amaizing gaming headphone",
-        "productCost": "$35.00"
+        "productCost": "$35.00",
+        "productRating": 5,
     },
     {
         "productId": "25",
         "productImage": "/productImg/watch.png",
         "productName": "Gamming headphones",
         "productShtDesc": "an amaizing gaming headphone",
-        "productCost": "$35.00"
+        "productCost": "$35.00",
+        "productRating": 5,
     },
     {
         "productId": "26",
         "productImage": "/productImg/headPhone.png",
         "productName": "Gamming headphones",
         "productShtDesc": "an amaizing gaming headphone",
-        "productCost": "$35.00"
+        "productCost": "$35.00",
+        "productRating": 5,
     },
     {
         "productId": "27",
         "productImage": "/productImg/headPhone.png",
         "productName": "Gamming headphones",
         "productShtDesc": "an amaizing gaming headphone",
-        "productCost": "$35.00"
+        "productCost": "$35.00",
+        "productRating": 5,
     },
     {
         "productId": "28",
         "productImage": "/productImg/watch.png",
         "productName": "Gamming headphones",
         "productShtDesc": "an amaizing gaming headphone",
-        "productCost": "$35.00"
+        "productCost": "$35.00",
+        "productRating": 5,
     },
     {
         "productId": "29",
         "productImage": "/productImg/headPhone.png",
         "productName": "Gamming headphones",
         "productShtDesc": "an amaizing gaming headphone",
-        "productCost": "$35.00"
+        "productCost": "$35.00",
+        "productRating": 5,
     },
 
 ]
@@ -49,26 +55,32 @@ export const brandsJson = [
     {
         "brandId": "1",
         "brandName": "Staples",
+        "brandImage": "/logos/logo1.png"
     },
     {
         "brandId": "2",
         "brandName": "Sprounts",
+        "brandImage": "/logos/logo1.png"
     },
     {
         "brandId": "3",
-        "brandName": "Bevmo"
+        "brandName": "Bevmo",
+        "brandImage": "/logos/logo2.png"
     },
     {
         "brandId": "4",
         "brandName": "Staples",
+        "brandImage": "/logos/logo1.png"
     },
     {
         "brandId": "6",
         "brandName": "Sprounts",
+        "brandImage": "/logos/logo1.png"
     },
     {
         "brandId": "7",
-        "brandName": "Bevmo"
+        "brandName": "Bevmo",
+        "brandImage": "/logos/logo2.png"
     },
 
 ]
@@ -122,7 +134,11 @@ export const productCategoryJson = [
         productCategoryId: "5",
         productCategoryName: "Hello World"
     },
-    
+    {
+        productCategoryId: "6",
+        productCategoryName: "Hello World"
+    },
+
 ]
 
 export const popularProductJson = [

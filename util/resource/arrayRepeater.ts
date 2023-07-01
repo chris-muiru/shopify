@@ -1,2 +1,2 @@
-export const repeat = (arr: string[], num: number) =>
+export const repeat = (arr: any, num: number) =>
 	Array(num).fill(arr).flat()
