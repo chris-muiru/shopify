@@ -14,9 +14,10 @@ const HeroSection = () => {
 					</h2>
 					<p className="md:text-2xl">
 						Lorem ipsum, dolor sit amet consectetur adipisicing elit.
-						Accusamus
+						Accusamus Lorem ipsum, dolor sit amet consectetur adipisicing
+						elit. Accusamus
 					</p>
-					<button className="bg-green-800 py-3 px-6 text-2xl  rounded-md text-white font-bold">
+					<button className="bg-green-800 py-3 px-6 text-xl  rounded-md text-white font-bold">
 						Learn more
 					</button>
 				</div>

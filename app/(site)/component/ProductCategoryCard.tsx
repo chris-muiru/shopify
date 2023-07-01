@@ -2,7 +2,7 @@ import React from "react"
 import Image from "next/image"
 const ProductCategoryCard = () => {
 	return (
-		<div className="w-[20rem] h-[20rem] sm:w-[20rem] sm:h-[20rem]  xl:w-[13.5rem] xl:h-[20rem] relative rounded-none  sm:rounded-xl  md:h-[20rem]">
+		<div className=" mx-auto w-[20rem] h-[20rem] sm:w-[20rem] sm:h-[20rem]  xl:w-[13.7rem] xl:h-[20rem] relative rounded-none  sm:rounded-xl  md:h-[20rem]">
 			<Image
 				src="/bag.png"
 				className="object-cover rounded-xl"

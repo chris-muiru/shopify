@@ -16,9 +16,7 @@ const ItemGroup = ({
 	cardClassName,
 }: ItemGroupProps) => {
 	return (
-		<div
-			className={tw("w-full", containerClassName ? containerClassName : "")}
-		>
+		<div className={tw("w-full", containerClassName ?? "")}>
 			{data?.map((item) => {
 				return (
 					<div

@@ -17,11 +17,11 @@ const StoreCard: FC<StoreCardProps> = ({
 	storeProductCategory,
 }) => {
 	return (
-		<div className="bg-slate-100 w-screen sm:w-[20rem] xl:w-[20.5rem]rounded-none  sm:rounded-xl">
+		<div className="bg-slate-100 w-screen sm:w-[20rem] xl:max-w-[18.5rem] sm:rounded-xl overflow-hidden">
 			<div className="w-full h-[270px] relative">
 				<Image
 					src={storeProductImageSample}
-					className="object-cover"
+					className="object-cover "
 					alt="store product image sample"
 					fill
 				/>

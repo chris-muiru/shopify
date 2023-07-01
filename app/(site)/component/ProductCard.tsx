@@ -21,7 +21,7 @@ const ProductCard: FC<ProductCardProps> = ({
 	productRating,
 }): React.JSX.Element => {
 	return (
-		<div className="w-full  border border-gray-200 rounded-lg shadow mx-1 xl:gap-2 xl:w-[25rem]">
+		<div className=" border  border-gray-200 rounded-lg shadow mx-1 xl:gap-2 xl:min-w-[23rem]">
 			<Link href={"#"}>
 				<div className="w-full h-[14rem] relative ">
 					<Image

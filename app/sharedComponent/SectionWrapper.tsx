@@ -1,5 +1,6 @@
 import React, { FC, ReactNode } from "react"
 import CustomHeader from "./CustomHeader"
+import tw from "@/util/resource/twMerge"
 
 interface SectionWrapperInterface {
 	children: ReactNode
@@ -14,7 +15,10 @@ const SectionWrapper: FC<SectionWrapperInterface> = ({
 }) => {
 	return (
 		<section
-			className={`max-w-[90rem] overflow-hidden m-2 sm:mx-auto xl:px-0   sm:my-5  ${sectionClassName}`}
+			className={tw(
+				"max-w-[76rem] overflow-hidden m-2 sm:mx-auto xl:px-0  sm:my-5",
+				sectionClassName as string
+			)}
 		>
 			{!!header && <CustomHeader header={header} />}
 			{children}

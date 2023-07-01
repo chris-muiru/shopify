@@ -38,7 +38,7 @@ export default function Home() {
 				<ItemGroup
 					keyExtractor={(item) => item.productCategoryId}
 					data={productCategory.data as any}
-					containerClassName="flex flex-row flex-wrap gap-5"
+					containerClassName="flex flex-row flex-wrap gap-5 mx-auto"
 					renderItem={(item) => {
 						return <ProductCategoryCard />
 					}}
@@ -78,7 +78,7 @@ export default function Home() {
 						],
 					}}
 					cardClassName={``}
-					containerClassName="m-auto"
+					containerClassName="m-auto gap-3"
 					keyExtractor={(item) => item.productId}
 					data={productQuery.data as any}
 					renderItem={(item: any) => {
@@ -113,7 +113,7 @@ export default function Home() {
 				<ItemGroup
 					keyExtractor={(item) => item.productOffId}
 					data={productOff.data as any}
-					containerClassName="flex flex-row flex-wrap justify-between"
+					containerClassName="flex flex-row flex-wrap"
 					renderItem={(item) => {
 						return <OffProducts />
 					}}
@@ -178,14 +178,13 @@ export default function Home() {
 					className="object-cover"
 					fill
 				/>
-				<div className=" w-3/4 bg-green-900 z-20 absolute right-10 bottom-10 text-white rounded-lg lg:w-1/2 xl:w-1/4 ">
+				<div className="w-3/4 bg-green-900 z-20 absolute right-10 bottom-10 text-white rounded-lg lg:w-1/2 xl:w-1/4 xl:right-[20rem]">
 					<div className="m-10 space-y-5">
 						<h2 className="sm:text-2xl">Get 5% Cash Back On $200</h2>
 						<p>
 							Shopping is a bit of a relaxing hobby for me, which is
 							sometimes troubling for the bank balance.
 						</p>
-
 						<button className="border border-white rounded-md p-2">
 							Learn More
 						</button>
@@ -198,7 +197,7 @@ export default function Home() {
 					{repeat(["Test"], 6).map((value, index) => {
 						return (
 							<div
-								className="bg-white border rounded-md p-3 px-[7rem] grow"
+								className="bg-white border rounded-md p-3 px-[7rem]"
 								key={index}
 							>
 								{value}
@@ -210,7 +209,7 @@ export default function Home() {
 
 			<SectionWrapper>
 				<ItemGroup
-					containerClassName="flex flex-wrap gap-y-4"
+					containerClassName="flex flex-wrap justify-start gap-2"
 					keyExtractor={(item) => item.productId}
 					data={productQuery.data as any}
 					renderItem={(item: any) => {
@@ -227,7 +226,7 @@ export default function Home() {
 					}}
 				/>
 			</SectionWrapper>
-			<div className="bg-yellow-300">
+			<div className="bg-yellow-300 xl:min-h-[24rem]">
 				<SectionWrapper>
 					<div className="flex justify-evenly">
 						<div className="space-y-3 font-bold lg:mt-16 w-full">
@@ -237,11 +236,12 @@ export default function Home() {
 								Learn More
 							</button>
 						</div>
-						<div className="hidden lg:block w-[250px] h-[150px] relative my-10 -rotate-[22deg]">
+						<div className="hidden lg:block w-[250px] h-[150px] relative m-10">
 							<Image
 								src={
 									"https://uploads-ssl.webflow.com/63e857eaeaf853471d5335ff/63e8c4e768e3260571e48a0c_visa%20card-min.png"
 								}
+								className=" -rotate-[20deg] "
 								fill
 								alt="smart card"
 							/>
@@ -274,7 +274,7 @@ export default function Home() {
 			<SectionWrapper header="Services To Help You Shop">
 				<ItemGroup
 					cardClassName="rounded-md"
-					containerClassName="flex flex-row flex-wrap gap-y-10 "
+					containerClassName="flex flex-row flex-wrap"
 					keyExtractor={(item) => item.productId}
 					data={bestStore.data as any}
 					renderItem={(item: any) => {
