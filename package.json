@@ -23,6 +23,7 @@
 		"react": "18.2.0",
 		"react-dom": "18.2.0",
 		"react-icons": "^4.9.0",
+		"react-lottie": "^1.2.3",
 		"react-query": "^3.39.3",
 		"react-slick": "^0.29.0",
 		"slick-carousel": "^1.8.1",
@@ -32,6 +33,7 @@
 	},
 	"devDependencies": {
 		"@types/axios": "^0.14.0",
+		"@types/react-lottie": "^1.2.6",
 		"@types/react-slick": "^0.23.10"
 	}
 }

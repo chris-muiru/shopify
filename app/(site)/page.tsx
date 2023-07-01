@@ -193,11 +193,11 @@ export default function Home() {
 			</div>
 
 			<SectionWrapper header="Todays best Deals for you">
-				<div className="flex rounded-xl gap-1 flex-wrap">
-					{repeat(["Test"], 6).map((value, index) => {
+				<div className="rounded-xl gap-3 grid grid-cols-1 sm:grid-cols-3">
+					{repeat(["Comming"], 6).map((value, index) => {
 						return (
 							<div
-								className="bg-white border rounded-md p-3 px-[7rem]"
+								className="bg-white border rounded-md p-3 px-[7rem] grid grid-cols-1 gap-2 sm:grid-cols-2"
 								key={index}
 							>
 								{value}

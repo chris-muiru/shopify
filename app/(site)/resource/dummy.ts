@@ -119,10 +119,10 @@ export const productCategoryJson = [
         productCategoryName: "Hellow World"
     },
     {
-        productCategoryId: "4",
-        productCategoryName: "Hellow World"
+        productCategoryId: "5",
+        productCategoryName: "Hello World"
     },
-
+    
 ]
 
 export const popularProductJson = [
