@@ -18,7 +18,7 @@ const HeroSection = () => {
 							sometimes troubling for the bank balance.
 						</p>
 						<button className="bg-[#003D29] py-3 px-6 text-sm  xl:text-xl rounded-full text-white absolute bottom-28">
-							Learn more
+							Learn More
 						</button>
 					</div>
 

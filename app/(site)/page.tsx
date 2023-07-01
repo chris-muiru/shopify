@@ -38,7 +38,7 @@ export default function Home() {
 				<ItemGroup
 					keyExtractor={(item) => item.productCategoryId}
 					data={productCategory.data as any}
-					containerClassName="flex flex-row flex-wrap gap-5 mx-auto"
+					containerClassName="grid grid-cols-2 lg:grid-cols-3 xl:grid-cols-5 gap-4"
 					renderItem={(item) => {
 						return <ProductCategoryCard />
 					}}
