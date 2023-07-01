@@ -20,7 +20,7 @@ const ProductCard: FC<ProductCardProps> = ({
 	productRating,
 }) => {
 	return (
-		<div className="flex flex-col w-full h-[27rem] p-5 m-3">
+		<div className="flex flex-col min-w-[20rem] w-full h-[27rem] m-3">
 			<div className="relative w-full h-full bg-[#F5F6F6]">
 				<Image
 					src={productImage}
@@ -32,7 +32,7 @@ const ProductCard: FC<ProductCardProps> = ({
 					<AiOutlineHeart />
 				</div>
 			</div>
-			<div className="relative">
+			<div className="relative p-5">
 				<div className="space-y-2">
 					<h2 className="font-semibold">{productName}</h2>
 					<small>{productShtDesc}</small>

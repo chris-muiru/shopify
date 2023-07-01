@@ -76,7 +76,7 @@ export default function Home() {
 							},
 						],
 					}}
-					cardClassName={``}
+					cardClassName={"gap-2"}
 					containerClassName="m-auto"
 					keyExtractor={(item) => item.productId}
 					data={productQuery.data as any}
@@ -164,7 +164,7 @@ export default function Home() {
 						],
 					}}
 					cardClassName={``}
-					containerClassName="m-auto"
+					containerClassName="m-auto gap-2"
 					keyExtractor={(item) => item.productId}
 					data={productQuery.data as any}
 					renderItem={(item: any) => {
@@ -184,7 +184,7 @@ export default function Home() {
 
 			<div className="w-full min-h-[600px] relative my-20">
 				<Image
-					src={"/bag.png"}
+					src={"/productImg/sit.jpeg"}
 					alt={"cash back"}
 					className="object-cover"
 					fill
@@ -204,11 +204,11 @@ export default function Home() {
 			</div>
 
 			<SectionWrapper header="Todays best Deals for you">
-				<div className="rounded-xl gap-3 grid grid-cols-1 sm:grid-cols-3">
-					{repeat(["Comming"], 6).map((value, index) => {
+				<div className="gap-3 flex flex-wrap">
+					{repeat(["toys"], 6).map((value, index) => {
 						return (
 							<div
-								className="bg-white border rounded-md p-3 px-[7rem] grid grid-cols-1 gap-2 sm:grid-cols-2"
+								className="bg-white border rounded-full px-5 py-2 sm:px-20 xm:py-4"
 								key={index}
 							>
 								{value}
@@ -220,7 +220,7 @@ export default function Home() {
 
 			<SectionWrapper>
 				<ItemGroup
-					containerClassName="flex flex-wrap justify-start gap-2"
+					containerClassName="flex flex-wrap justify-start gap-2 "
 					keyExtractor={(item) => item.productId}
 					data={productQuery.data as any}
 					renderItem={(item: any) => {
@@ -284,7 +284,7 @@ export default function Home() {
 
 			<SectionWrapper header="Services To Help You Shop">
 				<ItemGroup
-					cardClassName="rounded-md"
+					cardClassName="rounded-md grow"
 					containerClassName="flex flex-row flex-wrap"
 					keyExtractor={(item) => item.productId}
 					data={bestStore.data as any}

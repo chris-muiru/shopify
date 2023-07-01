@@ -20,7 +20,7 @@ const ItemGroup = ({
 			{data?.map((item) => {
 				return (
 					<div
-						className={tw("grow", cardClassName ? cardClassName : "")}
+						className={tw("", cardClassName ? cardClassName : "")}
 						key={keyExtractor(item)}
 					>
 						{renderItem(item)}

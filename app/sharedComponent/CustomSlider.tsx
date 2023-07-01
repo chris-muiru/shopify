@@ -28,11 +28,11 @@ const CustomSlider = ({
 	return (
 		<Slider
 			{...sliderSettings}
-			className={tw("my-8", containerClassName ?? "")}
+			className={tw("", containerClassName ?? "")}
 		>
 			{data?.map((item) => {
 				return (
-					<div className={`${cardClassName}`} key={keyExtractor(item)}>
+					<div className={`${tw("px-3",cardClassName)}`} key={keyExtractor(item)}>
 						{renderItem(item)}
 					</div>
 				)
