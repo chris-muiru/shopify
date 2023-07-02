@@ -16,11 +16,11 @@ const ItemGroup = ({
 	cardClassName,
 }: ItemGroupProps) => {
 	return (
-		<div className={tw("w-full", containerClassName ?? "")}>
+		<div className={tw("w-full gap-2", containerClassName ?? "")}>
 			{data?.map((item) => {
 				return (
 					<div
-						className={tw("", cardClassName ? cardClassName : "")}
+						className={tw("grow", cardClassName ? cardClassName : "")}
 						key={keyExtractor(item)}
 					>
 						{renderItem(item)}

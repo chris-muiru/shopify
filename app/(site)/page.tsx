@@ -76,7 +76,7 @@ export default function Home() {
 							},
 						],
 					}}
-					cardClassName={"gap-2"}
+					cardClassName=""
 					containerClassName="m-auto"
 					keyExtractor={(item) => item.productId}
 					data={productQuery.data as any}
@@ -124,7 +124,7 @@ export default function Home() {
 				<ItemGroup
 					keyExtractor={(item) => item.productOffId}
 					data={productOff.data as any}
-					containerClassName="flex flex-row flex-wrap"
+					containerClassName="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-y-4"
 					renderItem={(item) => {
 						return <OffProducts />
 					}}
@@ -220,7 +220,8 @@ export default function Home() {
 
 			<SectionWrapper>
 				<ItemGroup
-					containerClassName="flex flex-wrap justify-start gap-2 "
+					containerClassName="flex flex-wrap justify-start "
+					cardClassName=""
 					keyExtractor={(item) => item.productId}
 					data={productQuery.data as any}
 					renderItem={(item: any) => {

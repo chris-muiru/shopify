@@ -102,7 +102,7 @@ export const productOffJson = [
         "productOffId": "3",
         "productOffSaveCost": "$100",
         "productOffImage": "/productImg/watch.png",
-        "productOffDesc": "Explore Our Furniture & Home Furnishing Range"
+        "productOffDesc": "Explore Our Furniture & Hoome Furnishing Range"
     },
     {
         "productOffId": "4",

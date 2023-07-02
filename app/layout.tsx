@@ -1,9 +1,9 @@
 "use client"
-import { Inter } from "next/font/google"
+import { Inter, Nunito, Roboto } from "next/font/google"
+
 import "./globals.css"
 import { QueryClient, QueryClientProvider } from "react-query"
-const inter = Inter({ subsets: ["latin"] })
-
+const roboto = Roboto({ weight: "400", subsets: ["latin"] })
 export default function RootLayout({
 	children,
 }: {
@@ -13,7 +13,7 @@ export default function RootLayout({
 	return (
 		<html lang="en">
 			<head></head>
-			<body className={inter.className}>
+			<body className={roboto.className}>
 				<QueryClientProvider client={queryClient}>
 					{children}
 				</QueryClientProvider>

@@ -6,7 +6,7 @@ import animatedTruck from "@/public/lottiefiles/50810-forklift-loading-truck.jso
 import LottieAnimationComponent from "@/app/sharedComponent/LottieAnimationComponent"
 const HeroSection = () => {
 	return (
-		<div className="min-h-[200px] w-full relative bg-[#A5D3E6]">
+		<div className="min-h-[26rem] w-full relative bg-[#A5D3E6]">
 			<SectionWrapper>
 				<div className="flex flex-row relative z-20">
 					<div className="md:w-[38rem] space-y-10 relative  h-1/2 text-[#003D29]">
