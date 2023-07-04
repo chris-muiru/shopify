@@ -238,25 +238,43 @@ export default function Home() {
 					}}
 				/>
 			</SectionWrapper>
-			<div className="bg-yellow-300 xl:min-h-[24rem]">
-				<SectionWrapper>
-					<div className="flex justify-evenly">
-						<div className="space-y-3 font-bold lg:mt-16 w-full">
+			<div className="bg-yellow-300 ">
+				<SectionWrapper sectionClassName=" p-20">
+					<div className="flex justify-between">
+						<div className="font-bold  space-y-10">
 							<p className="text-4xl sm:text-5xl">Get 5% Cash Back</p>
 							<p className="text-2xl">on Shopcart.com</p>
 							<button className="bg-green-900 p-2 w-[130px] rounded-xl text-white">
 								Learn More
 							</button>
 						</div>
-						<div className="hidden lg:block w-[250px] h-[150px] relative m-10">
-							<Image
-								src={
-									"https://uploads-ssl.webflow.com/63e857eaeaf853471d5335ff/63e8c4e768e3260571e48a0c_visa%20card-min.png"
-								}
-								className=" -rotate-[20deg] "
-								fill
-								alt="smart card"
-							/>
+						<div className="relative self-center ">
+							<div className="hidden relative lg:block w-[26rem] h-[10rem] mt-16">
+								<Image
+									src={
+										"https://uploads-ssl.webflow.com/63e857eaeaf853471d5335ff/63e8c4e768e3260571e48a0c_visa%20card-min.png"
+									}
+									className="aspect-auto origin-bottom-left -rotate-[10deg]"
+									alt="green card"
+									fill
+								/>
+								<Image
+									src={
+										"https://uploads-ssl.webflow.com/63e857eaeaf853471d5335ff/63e8c4e71eb4ad08ebe75690_visa%20card%2002-min.png"
+									}
+									className="origin-bottom-left  -rotate-[15deg]"
+									alt="smart card"
+									fill
+								/>
+								<Image
+									src={
+										"https://uploads-ssl.webflow.com/63e857eaeaf853471d5335ff/63e8c4e768e3260571e48a0c_visa%20card-min.png"
+									}
+									className="origin-bottom-left  -rotate-[20deg]"
+									alt="smart card"
+									fill
+								/>
+							</div>
 						</div>
 					</div>
 				</SectionWrapper>

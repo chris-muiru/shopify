@@ -20,7 +20,7 @@ const ProductCard: FC<ProductCardProps> = ({
 	productRating,
 }) => {
 	return (
-		<div className="flex flex-col min-w-[20rem] w-full h-[27rem] m-3">
+		<div className="flex flex-col min-w-[20rem] w-full h-[27rem] m-3 p-4">
 			<div className="relative w-full h-full bg-[#F5F6F6]">
 				<Image
 					src={productImage}
@@ -58,7 +58,7 @@ const ProductCard: FC<ProductCardProps> = ({
 
 					<h2 className="absolute -top-2 right-0">{productCost}</h2>
 
-					<button className="border-2 px-6 p-2 rounded-xl">
+					<button className="border px-4 py-1 rounded-md">
 						Add to Cart
 					</button>
 				</div>
